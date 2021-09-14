@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zone Shop</title>
+  <!-- Main css  -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- google Montserrat  font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  
+<!-- header area -->
+  <header></header>
+
+<!-- body area -->
+  <main class="main container">
+    <!-- search form area -->
+    <div class="search-field">
+      <div class="search-box">
+        <input id="input-field" class="form-control" type="text" value="Search Products here..." aria-label="readonly input example" readonly>
+        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
+          autocomplete="off" id="search-btn" onclick="loadProducts()">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9 col-lg-9 col-sm-12">
+        <div id="all-products" class="row">
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-12 cart-main">
+        <div class="cart" id="my-cart">
+          <table class="table">
+            <thead>
+              <h1>My-Cart</h1>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Total Added-Products:</th>
+                <td><span id="total-Products">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>$ <span id="price">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Delivery-Charge:</th>
+                <td>$ <span id="delivery-charge">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Total-Tax:</th>
+                <td>$ <span id="total-tax">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td colspan="2">$ <span id="total">0</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="parces text-center">
+            <button class="btn btn-primary text-center">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- footer area -->
+  <footer></footer>
+
+
+
+<!-- single product Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="img-box">
+          <img id="midImage" src="" alt="">
+        </div>
+        <p class="category"></p>
+        <p class="des"></p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- add javascript  file  -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+
+</body>
+</html>
